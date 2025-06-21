@@ -56,13 +56,6 @@ const FloatingShapes = () => {
         </svg>
       </div>
 
-      {/* Geometric Shapes */}
-      <div className="absolute top-60 left-1/2 transform -translate-x-1/2 animate-float" style={{ animationDelay: '6s' }}>
-        <div className="w-16 h-16 border border-electric-blue/30 rotate-45 animate-spin" style={{ animationDuration: '20s' }}>
-          <div className="w-full h-full border border-neon-purple/20 rotate-45" />
-        </div>
-      </div>
-
       {/* Holographic Grid Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="cyber-grid w-full h-full" />
