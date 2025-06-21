@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,12 +62,35 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Futuristic Cable System Colors
+				electric: {
+					blue: '#3A86FF',
+					purple: '#8338EC',
+					pink: '#FF006E',
+					cyan: '#06FFA5'
+				},
+				neon: {
+					blue: '#00D9FF',
+					purple: '#B537F2',
+					pink: '#FF3D71',
+					green: '#39FF14'
+				},
+				dark: {
+					bg: '#0D0D0D',
+					card: '#1A1A1A',
+					surface: '#2D2D2D'
 				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			fontFamily: {
+				'poppins': ['Poppins', 'sans-serif'],
+				'inter': ['Inter', 'sans-serif'],
+				'sora': ['Sora', 'sans-serif']
 			},
 			keyframes: {
 				'accordion-down': {
@@ -84,11 +108,84 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { 
+						transform: 'translateY(0px) rotate(0deg)' 
+					},
+					'50%': { 
+						transform: 'translateY(-20px) rotate(180deg)' 
+					}
+				},
+				'glow-pulse': {
+					'0%, 100%': {
+						opacity: '1',
+						transform: 'scale(1)'
+					},
+					'50%': {
+						opacity: '0.8',
+						transform: 'scale(1.05)'
+					}
+				},
+				'particle-float': {
+					'0%': {
+						transform: 'translateY(100vh) translateX(-50px) rotate(0deg)',
+						opacity: '0'
+					},
+					'10%': {
+						opacity: '1'
+					},
+					'90%': {
+						opacity: '1'
+					},
+					'100%': {
+						transform: 'translateY(-100px) translateX(50px) rotate(360deg)',
+						opacity: '0'
+					}
+				},
+				'neon-glow': {
+					'0%, 100%': {
+						boxShadow: '0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor'
+					},
+					'50%': {
+						boxShadow: '0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor'
+					}
+				},
+				'slide-up': {
+					'0%': {
+						transform: 'translateY(100px)',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'translateY(0)',
+						opacity: '1'
+					}
+				},
+				'bounce-gentle': {
+					'0%, 100%': {
+						transform: 'translateY(-5%)',
+						animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)'
+					},
+					'50%': {
+						transform: 'translateY(0)',
+						animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'glow-pulse': 'glow-pulse 2s ease-in-out infinite',
+				'particle-float': 'particle-float 8s linear infinite',
+				'neon-glow': 'neon-glow 2s ease-in-out infinite alternate',
+				'slide-up': 'slide-up 0.6s ease-out forwards',
+				'bounce-gentle': 'bounce-gentle 2s infinite'
+			},
+			backgroundImage: {
+				'gradient-electric': 'linear-gradient(135deg, #3A86FF 0%, #8338EC 50%, #FF006E 100%)',
+				'gradient-neon': 'linear-gradient(45deg, #00D9FF 0%, #B537F2 50%, #FF3D71 100%)',
+				'gradient-dark': 'linear-gradient(135deg, #0D0D0D 0%, #1A1A1A 50%, #2D2D2D 100%)'
 			}
 		}
 	},
