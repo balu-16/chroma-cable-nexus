@@ -155,7 +155,7 @@ const Contact = () => {
                 <div>
                   <p className="text-gray-400 text-sm">Response Time</p>
                   <p className="text-white font-semibold text-lg">Instant Quantum</p>
-                  <p className="text-electric-blue text-sm">< 1 nanosecond</p>
+                  <p className="text-electric-blue text-sm">Less than 1 nanosecond</p>
                 </div>
               </div>
 
